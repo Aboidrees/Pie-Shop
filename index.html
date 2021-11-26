@@ -1,114 +1,148 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+          rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
 
 
     <title>Home | Bethany's Pie Shop</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- header -->
-    <header class="clearfix">
-      <div class="row limited">
-        <section class="column small-12">
-          <img src="images/logo.svg" alt="Bethany's Pie Shope">
-          <h1>Bethany's</h1>
-          <h2>Fantastic Pie Shop</h2>
-        </section>
-      </div><!-- end of row -->
-    </header>
+<!-- header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="images/logo.svg" alt="Bethany's Pie Shop">
+                <h1>Bethany's</h1>
+                <h2>Fantastic Pie Shop</h2>
+            </div>
+        </div>
+    </div><!-- end of row -->
+</header>
 
-    <!-- nav -->
-    <nav class="clearfix">
-      <div class="row limited">
-        <button id="hamburgerBtn">&#9776;</button>
-        <ul id="primaryNav">
-          <li class="active"><a href="index.html">Specials</a></li>
-          <li><a href="cheeseCakes.html">Cheese Cakes</a></li>
-          <li><a href="fruitPies.html">Fruit Oies</a></li>
-          <li><a href="#">Swag Shop</a></li>
+<!-- nav -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Specials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cheeseCakes.html">Cheese Cake</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fruitPies.html">Fruit Pies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Swag Shop</a>
+            </li>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- main -->
-    <main class="clearfix">
-      <div class="row limited">
-        <section class="column small-12">
-          <img src="images/hero.jpg" alt="Bethany Hero Image"  width="1140" height="561">
-        </section>
-      </div><!-- end row -->
 
-      <div class="row limited">
-        <section class="column small-12">
-          <h1>This Week Specials</h1>
-        </section>
-      </div><!-- end row -->
+<!-- main -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img class="img-fluid" src="images/hero.jpg" alt="Bethany Hero Image" width="1140" height="561">
+            </div>
+        </div><!-- end row -->
+    </div>
 
-      <div class="row limited">
-        <section class="column small-12 medium-6 labeled">
-          <h6>Apple Pie</h6>
-          <img src="products/pie-apple.jpg" alt="Apple Pie">
-          <p>SALE: $5.99</p>
-        </section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>This Week Specials</h1>
+            </div>
+        </div><!-- end row -->
+    </div>
 
-        <section class="column small-12 medium-6 labeled">
-          <h6>Cheese Cake</h6>
-          <img src="products/cake-plain.jpg" alt="Cheese Cake">
-          <p>SALE: $6.99</p>
-        </section>
-      </div><!-- end row -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="products/pie-apple.jpg" alt="Apple Pie">
+                    <div class="card-body">
+                        <h6>Apple Pie</h6>
+                        <p>SALE: $5.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
 
-    </main>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="products/cake-plain.jpg" alt="Cheese Cake">
+                    <div class="card-body">
+                        <h6>Cheese Cake</h6>
+                        <p>SALE: $6.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div>
+</main>
 
-    <!-- footer -->
-    <footer class="clearfix">
-      <div class="row limited">
-        <section class="column small-12 medium-6 large-3">
-          <h2>Location</h2>
-          <ul>
-            <li>Bethany's Pie Shop</li>
-            <li>123 Bakery Street</li>
-            <li>Brussels, Belgium</li>
-          </ul>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-          <h2>Company</h2>
-          <ul>
-            <li>Catering</li>
-            <li>Delivery</li>
-            <li>Swag Shop</li>
-            <li>Support</li>
-          </ul>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-          <h2>Social</h2>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-          </ul>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-          <h2>About Us</h2>
-          <img src="images/logo2.png" alt="logo">
-          <p>&copy; 2020 &bull; all rights reserved.</p>
-        </section>
-      </div> <!-- end row -->
-    </footer>
-
-    <script src="js/menu-toggle.js">
-    </script>
-  </body>
+<!-- footer -->
+<footer>
+    <div class="container mt-5 pt-3">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Bethany's Pie Shop</li>
+                    <li>123 Bakery Street</li>
+                    <li>Brussels, Belgium</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li>
+                    <li>Swag Shop</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h2>About Us</h2>
+                <img src="images/logo2.png" alt="logo">
+                <p>&copy; 2020 &bull; all rights reserved.</p>
+            </div>
+        </div> <!-- end row -->
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
