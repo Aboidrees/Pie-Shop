@@ -9,13 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
-    <title>Home | Bethany's Pie Shope</title>
+    <title>Home | Bethany's Pie Shop</title>
   </head>
 
   <body>
@@ -37,16 +34,41 @@
         <button id="hamburgerBtn">&#9776;</button>
         <ul id="primaryNav">
           <li class="active"><a href="index.html">Specials</a></li>
-          <li><a href="#">Cheese Cakes</a></li>
-          <li><a href="#">Fruit Oies</a></li>
+          <li><a href="cheeseCakes.html">Cheese Cakes</a></li>
+          <li><a href="fruitPies.html">Fruit Oies</a></li>
           <li><a href="#">Swag Shop</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- main -->
-    <main>
-      <h1>Specials</h1>
+    <main class="clearfix">
+      <div class="row limited">
+        <section class="column small-12">
+          <img src="images/hero.jpg" alt="Bethany Hero Image"  width="1140" height="561">
+        </section>
+      </div><!-- end row -->
+
+      <div class="row limited">
+        <section class="column small-12">
+          <h1>This Week Specials</h1>
+        </section>
+      </div><!-- end row -->
+
+      <div class="row limited">
+        <section class="column small-12 medium-6 labeled">
+          <h6>Apple Pie</h6>
+          <img src="products/pie-apple.jpg" alt="Apple Pie">
+          <p>SALE: $5.99</p>
+        </section>
+
+        <section class="column small-12 medium-6 labeled">
+          <h6>Cheese Cake</h6>
+          <img src="products/cake-plain.jpg" alt="Cheese Cake">
+          <p>SALE: $6.99</p>
+        </section>
+      </div><!-- end row -->
+
     </main>
 
     <!-- footer -->
